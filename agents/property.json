@@ -148,7 +148,7 @@
                             "agora_asr_vendor_key": "$AZURE_STT_KEY",
                             "agora_asr_vendor_name": "microsoft",
                             "agora_asr_vendor_region": "$AZURE_STT_REGION",
-                            "app_id": "$AGORA_APP_ID",
+                            "app_id": "${env:AGORA_APP_ID}",
                             "channel": "astra_agents_test",
                             "enable_agora_asr": true,
                             "publish_audio": true,
@@ -210,7 +210,7 @@
                         "extension_group": "default",
                         "name": "fashionai",
                         "property": {
-                            "app_id": "$AGORA_APP_ID",
+                            "app_id": "${env:AGORA_APP_ID}",
                             "channel": "astra_agents_test",
                             "stream_id": 12345,
                             "token": "",
