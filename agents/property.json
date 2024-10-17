@@ -173,7 +173,7 @@
                         "extension_group": "chatgpt",
                         "name": "openai_chatgpt",
                         "property": {
-                            "api_key": "$OPENAI_API_KEY",
+                            "api_key": "${env:OPENAI_API_KEY}",
                             "base_url": "",
                             "frequency_penalty": 0.9,
                             "greeting": "TEN Agent connected. How can I help you today?",
@@ -181,7 +181,7 @@
                             "max_tokens": 512,
                             "model": "gpt-4o-mini",
                             "prompt": "",
-                            "proxy_url": "$OPENAI_PROXY_URL"
+                            "proxy_url": "${env:OPENAI_PROXY_URL}"
                         },
                         "type": "extension"
                     },
@@ -191,8 +191,8 @@
                         "extension_group": "tts",
                         "name": "azure_tts",
                         "property": {
-                            "azure_subscription_key": "$AZURE_TTS_KEY",
-                            "azure_subscription_region": "$AZURE_TTS_REGION",
+                            "azure_subscription_key": "${env:AZURE_TTS_KEY}",
+                            "azure_subscription_region": "${env:AZURE_TTS_REGION}",
                             "azure_synthesis_voice_name": "en-US-JaneNeural"
                         },
                         "type": "extension"
