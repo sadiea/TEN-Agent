@@ -9,10 +9,10 @@ from .log import logger
 
 
 class FashionAIClient:
-    def __init__(self, uri, service_id):
+    def __init__(self, uri):
         self.uri = uri
         self.websocket = None
-        self.service_id = service_id
+        self.service_id = "agora"
 
     async def connect(self):
         ssl_context = ssl._create_unverified_context()
